@@ -25,11 +25,6 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@GetMapping("/hello")
-	public String sendGreetings() {
-		return "Hello, World!";
-	}
-
 	@PostMapping("/register")
 	public String registerUser(@RequestBody User user) {
 		String resMessage = userService.createUser(user);
