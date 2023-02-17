@@ -1,18 +1,19 @@
-package com.example.helloworld;
+package com.lets.koder;
 
-import com.example.helloworld.controller.HelloWorldController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.lets.koder.controller.UserController;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
 @SpringBootTest
-class HelloWorldApplicationTests {
+class UserServiceApplicationTests {
 
     @Autowired
-    private HelloWorldController helloWorldController;
+    private UserController helloWorldController;
 
     @Test
     void contextLoads() {
